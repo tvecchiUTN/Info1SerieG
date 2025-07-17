@@ -1,15 +1,20 @@
 #include <stdio.h>
+#include <stdint.h>
 #include "alearStatic.h"
 
 int main(void)
 {
-    int num;
 
-    for(int i = 0; i<10; i++)
+    int dadosJugar;
+
+    for(int i = 0; i<500; i++)
     {
-        num = dado();
-        printf("Numero: %d\n", num);
+         dadosJugar = jugada();
+         printf("%d\n", dadosJugar);
+         printf("\n");
     }
+
+    //printf("%x\n", dadosJugar);
 
     return 0;
 }
